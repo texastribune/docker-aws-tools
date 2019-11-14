@@ -46,7 +46,7 @@ description = "Helper utilities for Python projects"
 name = "project-runpy"
 optional = false
 python-versions = ">=3"
-version = "1.0.0"
+version = "1.0.1"
 
 [[package]]
 category = "main"
@@ -95,7 +95,7 @@ babel = ["8ce4cb6fdd4393edd323227cba3a077bceb2a6ce5201c902c65e730046f41f14", "ad
 boto = ["147758d41ae7240dc989f0039f27da8ca0d53734be0eb869ef16e3adcfa462e8", "ea0d3b40a2d852767be77ca343b58a9e3a4b00d9db440efb8da74b4e58025e5a"]
 delorean = ["fe67786e12338523848bec5588a658c4d425e12d53eb51cfef870bec8f576134"]
 humanize = ["a43f57115831ac7c70de098e6ac46ac13be00d69abbf60bdcac251344785bb19"]
-project-runpy = ["d009f606147645a3ab7ac6e706787ca9d0ae49ef6cbc6d0c8a106d3a455c3411", "edeb9769beef9b53efe2061b77734d40df5e5ae75ede69a0391038494deedc60"]
+project-runpy = ["3be28eb32d89eeda21d2d2818a9f7a58a53b2db24470f0fd9dcd1b6f87c117eb", "a837fcf366b57d1abffa50b363f908fab143f26329c48dffd280d9f9e89e35f0"]
 python-dateutil = ["891c38b2a02f5bb1be3e4793866c8df49c7d19baabf9c1bad62547e0b4866aca", "95511bae634d69bc7329ba55e646499a842bc4ec342ad54a8cdb65645a0aad3c"]
 pytz = ["26c0b32e437e54a18161324a2fca3c4b9846b74a8dccddd843113109e1116b32", "c894d57500a4cd2d5c71114aaab77dbab5eabd9022308ce5ac9bb93a60a6f0c7"]
 six = ["70e8a77beed4562e7f14fe23a786b54f6296e34344c23bc42f07b15018ff98e9", "832dc0e10feb1aa2c68dcc57dbb658f1c7e65b9b61af69048abc87a2db00a0eb"]
