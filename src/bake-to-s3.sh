@@ -18,8 +18,8 @@ readonly SITE=${SITE}
 readonly S3_TARGET=${S3_TARGET}
 readonly DEPTH=${DEPTH:-1}
 
-mkdir /tmp/site
-cd /tmp/site
+export S3_DIRECTORY=/tmp/site
+
 wget -r ${SITE} \
  --page-requisites \
  --force-html \
@@ -28,5 +28,6 @@ wget -r ${SITE} \
  --no-verbose \
  --adjust-extension \
  --level=${DEPTH}
+ --directory-prefix=${S3_DIRECTORY}
 
-aws s3 sync . ${S3_TARGET}
+./app/copy-to-s3.sh
