@@ -20,6 +20,7 @@ readonly DEPTH=${DEPTH:-1}
 
 export S3_DIRECTORY=/tmp/site
 
+mkdir "${S3_DIRECTORY}"
 wget -r ${SITE} \
  --page-requisites \
  --force-html \
