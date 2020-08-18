@@ -8,10 +8,10 @@ RUN apt-get update && \
   dpkg-reconfigure --frontend noninteractive tzdata
 #ADD requirements.txt /app
 RUN pip install --upgrade pip
-ENV POETRY_VERSION=0.12.17
+ENV POETRY_VERSION=1.0.10
 ENV PATH=/root/.poetry/bin:/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 RUN curl -sSL https://raw.githubusercontent.com/sdispater/poetry/master/get-poetry.py | python \
-  && poetry config settings.virtualenvs.create false
+  && poetry config virtualenvs.create false
 ENV GHBACKUP_VERSION=1.12.0
 RUN wget https://github.com/qvl/ghbackup/releases/download/v${GHBACKUP_VERSION}/ghbackup_${GHBACKUP_VERSION}_linux_amd64.deb && \
   dpkg -i ghbackup_${GHBACKUP_VERSION}_linux_amd64.deb && \
