@@ -30,4 +30,4 @@ wget -r ${SITE} \
  --level=${DEPTH}
  --directory-prefix=${S3_DIRECTORY}
 
-source app/copy-to-s3.sh
+source /app/copy-to-s3.sh
