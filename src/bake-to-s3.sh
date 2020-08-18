@@ -28,7 +28,7 @@ wget -r ${SITE} \
  --no-host-directories \
  --no-verbose \
  --adjust-extension \
- --level=${DEPTH}
+ --level=${DEPTH} \
  --directory-prefix=${S3_DIRECTORY}
 
 source /app/copy-to-s3.sh
