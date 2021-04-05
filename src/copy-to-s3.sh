@@ -16,4 +16,4 @@ set -o xtrace
 readonly S3_DIRECTORY=${S3_DIRECTORY}
 readonly S3_TARGET=${S3_TARGET}
 
-aws s3 sync ${S3_DIRECTORY} ${S3_TARGET}
+aws s3 cp ${S3_DIRECTORY} ${S3_TARGET} --recursive
